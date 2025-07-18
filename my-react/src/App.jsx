@@ -1,6 +1,7 @@
 import Card from "./components/Card"
 import Button from "./components/Button"
 import Student from "./components/Student"
+import UserGreeting from "./components/UserGreeting"
 function App() {
   return (
     <>
@@ -14,6 +15,8 @@ function App() {
       <Student name="sandy" age={27} isStudent={true} />
       <hr />
       <Student />
+      <hr />
+      <UserGreeting isLoggedIn={true} username="my name"/>
 
       <Button/>
       <br />

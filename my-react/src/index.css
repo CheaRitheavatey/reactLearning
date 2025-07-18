@@ -39,3 +39,15 @@
 .student p {
   margin: 0;
 }
+
+.wel, .log-in {
+  font-size: 2em;
+  background-color: bisque;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.log-in {
+  background-color: brown;
+}
