@@ -26,7 +26,9 @@ function List() {
     fruits.sort((a,b) => a.calorie-b.calorie);
 
 
-    const item = fruits.map(fruit => <li key={fruit.id}>{fruit.name}: {fruit.calorie}</li>)
+    // const lowcal = fruits.filter(fruit => fruit.calorie <= 100)
+    const highcal = fruits.filter(fruit => fruit.calorie > 100)
+    const item = highcal.map(fruit => <li key={fruit.id}>{fruit.name}: {fruit.calorie}</li>)
     
     return (
         <ul>{item}</ul>
