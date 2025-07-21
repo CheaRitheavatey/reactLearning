@@ -24,9 +24,9 @@ function Button() {
     };
    
 
-    const handleClick2 = (e) => e.target.textContent = "OUCH";
+    const handleClick2 = (e) => e.target.textContent = "ouch";
     return (
-        <button className={styles.btn} onDoubleClick={(e) => handleClick2(e)}>Click Me</button>
+        <button className={styles.btn} onClick={(e) => handleClick2(e)}>Click Me</button>
     )
 }
 export default Button
