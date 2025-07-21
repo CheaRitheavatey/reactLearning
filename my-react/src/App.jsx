@@ -47,6 +47,7 @@ function App() {
   return (
     <>
 
+      <Button/>
       {vegetable.length > 0 && <List item={vegetable} category="vegetable"/>}
 
       <hr />
@@ -63,8 +64,7 @@ function App() {
       <Student />
       <hr />
       <UserGreeting isLoggedIn={true} username="my name"/>
-      <hr />
-      <Button/>
+
       <br />
       <Card/>
       <Card/>

@@ -10,8 +10,23 @@ function Button() {
         cursor: "pointer",
 
     }
+
+    let count = 0;
+    const handleClick = (name) => {
+        if (count < 3) {
+            count++;
+            console.log("You click "+ count + " times")
+        } else {
+            console.log("stop click!");
+
+        }
+        
+    };
+   
+
+    const handleClick2 = (e) => e.target.textContent = "OUCH";
     return (
-        <button className={styles.btn}>Click Me</button>
+        <button className={styles.btn} onDoubleClick={(e) => handleClick2(e)}>Click Me</button>
     )
 }
 export default Button
