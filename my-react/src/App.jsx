@@ -4,9 +4,54 @@ import Student from "./components/Student"
 import UserGreeting from "./components/UserGreeting"
 import List from "./components/List"
 function App() {
+       const vegetable = [{
+            id:6,
+            name: "potatoes",
+            calorie: 110
+        }, 
+        {
+            id:7,
+            name: "celery",
+            calorie: 15
+        }, 
+        {
+            id: 8,
+            name: "carrots",
+            calorie: 25
+        }, 
+        {
+            id: 9,
+            name: "corn",
+            calorie: 63}]
+
+        const fruits = [
+        {
+            id:1,
+            name: "apple",
+            calorie: 95
+        }, 
+        {
+            id:2,
+            name: "banana",
+            calorie: 105
+        }, 
+        {
+            id: 3,
+            name: "coconut",
+            calorie: 50
+        }, 
+        {
+            id: 4,
+            name: "durian",
+            calorie: 110}]
   return (
     <>
-      <List/>
+
+      {vegetable.length > 0 && <List item={vegetable} category="vegetable"/>}
+
+      <hr />
+      {fruits.length > 0 && <List item={fruits} category="fruit"/> }
+      {/* <List/>
       <Student name="spongebob" age={14} isStudent={true} />
       <hr />
       <Student name="patrick" age={34} isStudent={false} />
@@ -23,7 +68,7 @@ function App() {
       <br />
       <Card/>
       <Card/>
-      <Card/>
+      <Card/> */}
     
     </>
   )
