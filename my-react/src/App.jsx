@@ -3,6 +3,7 @@ import Button from "./components/Button"
 import Student from "./components/Student"
 import UserGreeting from "./components/UserGreeting"
 import List from "./components/List"
+import MyComponent from "./components/myComponent"
 function App() {
        const vegetable = [{
             id:6,
@@ -47,11 +48,13 @@ function App() {
   return (
     <>
 
-      <Button/>
-      {vegetable.length > 0 && <List item={vegetable} category="vegetable"/>}
+        <MyComponent/>
 
-      <hr />
-      {fruits.length > 0 && <List item={fruits} category="fruit"/> }
+      {/* <Button/> */}
+      {/* {vegetable.length > 0 && <List item={vegetable} category="vegetable"/>} */}
+
+      {/* <hr /> */}
+      {/* {fruits.length > 0 && <List item={fruits} category="fruit"/> } */}
       {/* <List/>
       <Student name="spongebob" age={14} isStudent={true} />
       <hr />
