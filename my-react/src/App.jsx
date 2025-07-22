@@ -47,9 +47,12 @@ function App() {
             name: "durian",
             calorie: 110}]
   return (
-    <>
-        <Counter></Counter>
-        {/* <MyComponent/> */}
+    <>  
+        {/* onChange */}
+        {/* <Counter></Counter> */}
+
+
+        <MyComponent/>
 
       {/* <Button/> */}
       {/* {vegetable.length > 0 && <List item={vegetable} category="vegetable"/>} */}
