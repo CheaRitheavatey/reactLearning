@@ -4,6 +4,7 @@ import Student from "./components/Student"
 import UserGreeting from "./components/UserGreeting"
 import List from "./components/List"
 import MyComponent from "./components/myComponent"
+import Counter from "./components/Counter"
 function App() {
        const vegetable = [{
             id:6,
@@ -47,8 +48,8 @@ function App() {
             calorie: 110}]
   return (
     <>
-
-        <MyComponent/>
+        <Counter></Counter>
+        {/* <MyComponent/> */}
 
       {/* <Button/> */}
       {/* {vegetable.length > 0 && <List item={vegetable} category="vegetable"/>} */}
