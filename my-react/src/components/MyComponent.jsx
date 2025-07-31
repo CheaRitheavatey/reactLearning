@@ -12,7 +12,7 @@ function MyComponent() {
         setName("Jonh Doe");
     }
     const updateAge = () => {
-        setAge(age + 1);
+        setAge(age + 2);
     }
     const updateEmployed = () => {
         setIsEmployed(!isEmployed);
