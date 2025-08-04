@@ -9,9 +9,10 @@ function ColorPicker() {
         <div className='colorPicker-container'>
             <h1>Color Picker</h1>
             <div className='display-color' style={{backgroundColor: color}}>
+                <div className='hex-code'>{color}</div>
             </div>
             <br />
-            <p>Select a Color: </p>
+            <label htmlFor="">Select a Color: </label>
             <input type="color" value={color} onChange={handleColorChange}/> 
 
         </div>

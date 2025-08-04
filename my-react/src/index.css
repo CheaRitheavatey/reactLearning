@@ -104,4 +104,27 @@
   min-height: 250px;
   border-radius: 8px;
   max-width: 250px;
+  transition: box-shadow 0.2s ease;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
+.colorPicker-container {
+  display: flex;
+  flex-direction: column;
+
+}
+.display-color:hover {
+  cursor: pointer;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+
+}
+.hex-code {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
