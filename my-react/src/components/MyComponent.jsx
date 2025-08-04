@@ -8,6 +8,7 @@ function MyComponent() {
     const [comment, setComment] = useState("");
     const [payment, setPayment] = useState("");
     const [divery, setDivery] = useState("");
+
     const updateName = () => {
         setName("Jonh Doe");
     }
@@ -37,7 +38,7 @@ function MyComponent() {
         setPayment(e.target.value)
     }
     function handleDiveryChange(e) {
-        setDivery
+        setDivery(e.target.value);
     }
     return (
         <div>
@@ -67,6 +68,17 @@ function MyComponent() {
                 <option value="giftCard">Gift Card</option>
             </select>
             <p>Payment: {payment}</p>
+
+            <label htmlFor="">
+                <input type="radio" value="Pick Up" checked={divery === "Pick Up"} onChange={handleDiveryChange}/>
+                
+                Pick Up
+            </label>
+            <br />
+            <label htmlFor="">
+                <input type="radio" value="Delivery" checked={divery === "Delivery"} onChange={handleDiveryChange} />
+                Delivery
+            </label>
         </div>
     );
 }
