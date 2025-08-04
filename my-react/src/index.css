@@ -99,3 +99,9 @@
 .btn:hover {
   background-color: palevioletred;
 }
+
+.display-color {
+  min-height: 250px;
+  border-radius: 8px;
+  max-width: 250px;
+}
