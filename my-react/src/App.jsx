@@ -6,6 +6,7 @@ import List from "./components/List"
 import MyComponent from "./components/myComponent"
 import Counter from "./components/Counter"
 import ColorPicker from "./components/ColorPicker"
+import Car from "./components/Car"
 function App() {
        const vegetable = [{
             id:6,
@@ -49,7 +50,8 @@ function App() {
             calorie: 110}]
   return (
     <>  
-
+    <Car></Car>
+    <Counter></Counter>
     <ColorPicker></ColorPicker>
         {/* onChange */}
         {/* <Counter></Counter> */}

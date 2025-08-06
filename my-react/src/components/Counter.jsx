@@ -3,17 +3,29 @@ import { useState } from "react"
 function Counter() {
 
     const [count, setCount] = useState(0);
-    const increamentCount = () => {
-        setCount(count + 1) 
-    }
-
-    const decrementCount = () => {
-        setCount(count - 1)
-    }
-
-    const reset = () => {
+    // updater function
+    function increamentCount() {
+        setCount(c => c + 2)
+    };
+    function decrementCount() {
+        setCount(c => c - 2)
+    };
+    function reset() {
         setCount(0)
-    }
+    };
+
+
+    // const increamentCount = () => {
+    //     setCount(c => c + 1) 
+    // }
+
+    // const decrementCount = () => {
+    //     setCount(c => c - 2)
+    // }
+
+    // const reset = () => {
+    //     setCount(0)
+    // }
     return (
 
         <div className="counter-container">
