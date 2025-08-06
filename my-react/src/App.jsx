@@ -7,6 +7,7 @@ import MyComponent from "./components/myComponent"
 import Counter from "./components/Counter"
 import ColorPicker from "./components/ColorPicker"
 import Car from "./components/Car"
+import MyComponent2 from "./components/MyComponent2"
 function App() {
        const vegetable = [{
             id:6,
@@ -50,6 +51,7 @@ function App() {
             calorie: 110}]
   return (
     <>  
+    <MyComponent2></MyComponent2>
     <Car></Car>
     <Counter></Counter>
     <ColorPicker></ColorPicker>
